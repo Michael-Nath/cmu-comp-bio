@@ -77,6 +77,7 @@ func Permutation(n, k int) int {
 	larger <- greater of n-k and k
 	for every integer p from n to the larger:
 		prod becomes itself multiplied 
+	return prod divided by factorial of the smaller number
 */
 
 
