@@ -15,28 +15,28 @@ type testpair struct {
 
 var tests = []testpair {
 {filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test10.txt"),0.000},
-{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test7.txt"),0.485},
-{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test8.txt"),0.316},
-{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test9.txt"),0.625},
+{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test7.txt"),0.500},
+{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test8.txt"),0.658},
+{filepath.Join("Tests","test10.txt"), filepath.Join("Tests","test9.txt"),0.707},
 
 {filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test11.txt"),0.000},
-{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test12.txt"),0.263},
-{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test13.txt"),0.292},
-{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test14.txt"),0.542},
+{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test12.txt"),0.333},
+{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test13.txt"),0.346},
+{filepath.Join("Tests","test11.txt"), filepath.Join("Tests","test14.txt"),0.560},
 
-{filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test11.txt"),0.263},
+{filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test11.txt"),0.333},
 {filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test12.txt"),0.000},
 {filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test13.txt"),0.462},
-{filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test14.txt"),0.400},
+{filepath.Join("Tests","test12.txt"), filepath.Join("Tests","test14.txt"),0.429},
 
-{filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test11.txt"),0.292},
+{filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test11.txt"),0.346},
 {filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test12.txt"),0.462},
 {filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test13.txt"),0.000},
-{filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test14.txt"),0.667},
+{filepath.Join("Tests","test13.txt"), filepath.Join("Tests","test14.txt"),0.677},
 
-{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test11.txt"),0.542},
-{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test12.txt"),0.400},
-{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test13.txt"),0.667},
+{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test11.txt"),0.560},
+{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test12.txt"),0.429},
+{filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test13.txt"),0.677},
 {filepath.Join("Tests","test14.txt"), filepath.Join("Tests","test14.txt"),0.000},
 
 {filepath.Join("Tests","test1.txt"), filepath.Join("Tests","test1.txt"),0.000},
@@ -45,36 +45,36 @@ var tests = []testpair {
 {filepath.Join("Tests","test3.txt"), filepath.Join("Tests","test3.txt"),0.000},
 {filepath.Join("Tests","test3.txt"), filepath.Join("Tests","test4.txt"),0.406},
 {filepath.Join("Tests","test3.txt"), filepath.Join("Tests","test5.txt"),0.350},
-{filepath.Join("Tests","test3.txt"), filepath.Join("Tests","test6.txt"),0.000},
+{filepath.Join("Tests","test3.txt"), filepath.Join("Tests","test6.txt"),0.053},
 
 {filepath.Join("Tests","test4.txt"), filepath.Join("Tests","test3.txt"),0.406},
 {filepath.Join("Tests","test4.txt"), filepath.Join("Tests","test4.txt"),0.000},
 {filepath.Join("Tests","test4.txt"), filepath.Join("Tests","test5.txt"),0.563},
-{filepath.Join("Tests","test4.txt"), filepath.Join("Tests","test6.txt"),0.280},
+{filepath.Join("Tests","test4.txt"), filepath.Join("Tests","test6.txt"),0.438},
 
 {filepath.Join("Tests","test5.txt"), filepath.Join("Tests","test3.txt"),0.350},
 {filepath.Join("Tests","test5.txt"), filepath.Join("Tests","test4.txt"),0.563},
 {filepath.Join("Tests","test5.txt"), filepath.Join("Tests","test5.txt"),0.000},
-{filepath.Join("Tests","test5.txt"), filepath.Join("Tests","test6.txt"),0.333},
+{filepath.Join("Tests","test5.txt"), filepath.Join("Tests","test6.txt"),0.400},
 
-{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test3.txt"),0.000},
-{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test4.txt"),0.280},
-{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test5.txt"),0.333},
+{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test3.txt"),0.053},
+{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test4.txt"),0.438},
+{filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test5.txt"),0.400},
 {filepath.Join("Tests","test6.txt"), filepath.Join("Tests","test6.txt"),0.000},
 
-{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test10.txt"),0.485},
+{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test10.txt"),0.500},
 {filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test7.txt"),0.000},
-{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test8.txt"),0.421},
-{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test9.txt"),0.458},
+{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test8.txt"),0.593},
+{filepath.Join("Tests","test7.txt"), filepath.Join("Tests","test9.txt"),0.519},
 
-{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test10.txt"),0.316},
-{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test7.txt"),0.421},
+{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test10.txt"),0.658},
+{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test7.txt"),0.593},
 {filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test8.txt"),0.000},
-{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test9.txt"),0.364},
+{filepath.Join("Tests","test8.txt"), filepath.Join("Tests","test9.txt"),0.462},
 
-{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test10.txt"),0.625},
-{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test7.txt"),0.458},
-{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test8.txt"),0.364},
+{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test10.txt"),0.707},
+{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test7.txt"),0.519},
+{filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test8.txt"),0.462},
 {filepath.Join("Tests","test9.txt"), filepath.Join("Tests","test9.txt"),0.000}}
 
 
@@ -83,15 +83,15 @@ func TestJaccardDistance(t *testing.T) {
 		v := round(JaccardDistance(Read(pair.file1, pair.file2)))
 		if v != pair.distance {
 			t.Error(
-				"For", pair.file1, 
+				"For", pair.file1,
 				"and", pair.file2,
 				"expected", strconv.FormatFloat(pair.distance, 'f', 3, 64),
 				"got", strconv.FormatFloat(v, 'f', 3, 64),
-			) 
+			)
 		} /*
 		p1 := strings.Split(pair.file1, "\\")
 		p2 := strings.Split(pair.file2, "\\")
-		fmt.Printf("{filepath.Join(\"%s\",\"%s\"), filepath.Join(\"%s\",\"%s\"),%.3f},\n", 
+		fmt.Printf("{filepath.Join(\"%s\",\"%s\"), filepath.Join(\"%s\",\"%s\"),%.3f},\n",
 		p1[0], p1[1], p2[0], p2[1],round(pair.distance)) */
 	}
 }
@@ -102,10 +102,10 @@ func round(dist float64) float64 {
 
 /*
 func makeTests() []testpair {
-	names := make([]string, 0) 	
+	names := make([]string, 0)
 	tests := make([]testpair, 0)
-	
-	err := filepath.Walk("./Tests", 
+
+	err := filepath.Walk("./Tests",
 		func(path string, info os.FileInfo, err error) error {
 			name := info.Name()
 			if strings.Contains(name, ".txt") {
