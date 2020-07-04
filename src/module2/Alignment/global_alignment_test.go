@@ -5,19 +5,6 @@ import (
 	"testing"
 )
 
-type GlobalAlignmentInput struct {
-	str1     string
-	str2     string
-	match    float64
-	mismatch float64
-	gap      float64
-}
-
-type globaltestpair struct {
-	input    GlobalAlignmentInput
-	solScore float64
-}
-
 var globalTests = []globaltestpair{
 	{GlobalAlignmentInput{"A",
 		"A",
@@ -66,22 +53,4 @@ func TestGlobalAlignment(t *testing.T) {
 			)
 		}
 	}
-}
-
-func computeScore(alignment Alignment, match float64, mismatch float64, gap float64) float64 {
-	score := 0.0
-	str1 := alignment[0]
-	str2 := alignment[1]
-	gapC := "-"
-
-	for i, c := range str1 {
-		if string(c) == string(str2[i]) {
-			score += match
-		} else if string(c) == gapC || string(str2[i]) == gapC {
-			score += gap
-		} else {
-			score += mismatch
-		}
-	}
-	return score
 }
