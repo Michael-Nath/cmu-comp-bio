@@ -1,17 +1,9 @@
-package Alignment
+package challenge
 
 import (
 	"reflect"
 	"testing"
 )
-
-type Solution struct {
-	score  float64
-	start0 int
-	end0   int
-	start1 int
-	end1   int
-}
 
 type LocalAlignmentInput struct {
 	str1     string
@@ -20,6 +12,21 @@ type LocalAlignmentInput struct {
 	mismatch float64
 	gap      float64
 }
+type Solution struct {
+	score  float64
+	start0 int
+	end0   int
+	start1 int
+	end1   int
+}
+
+// type LocalAlignmentInput struct {
+// 	str1     string
+// 	str2     string
+// 	match    float64
+// 	mismatch float64
+// 	gap      float64
+// }
 
 type testpair struct {
 	input LocalAlignmentInput
@@ -71,6 +78,7 @@ func TestLocalAlignment(t *testing.T) {
 	for _, pair := range tests {
 		optAlignment, start0, end0, start1, end1 := LocalAlignment(pair.input.str1, pair.input.str2, pair.input.match, pair.input.mismatch, pair.input.gap)
 		score := computeScore(optAlignment, pair.input.match, pair.input.mismatch, pair.input.gap)
+
 		v := Solution{score, start0, end0, start1, end1}
 		if !reflect.DeepEqual(v, pair.sol) {
 			t.Error(
@@ -80,4 +88,22 @@ func TestLocalAlignment(t *testing.T) {
 			)
 		}
 	}
+}
+
+func computeScore(alignment [2]string, match float64, mismatch float64, gap float64) float64 {
+	score := 0.0
+	str1 := alignment[0]
+	str2 := alignment[1]
+	gapC := "-"
+
+	for i, c := range str1 {
+		if string(c) == string(str2[i]) {
+			score += match
+		} else if string(c) == gapC || string(str2[i]) == gapC {
+			score += gap
+		} else {
+			score += mismatch
+		}
+	}
+	return score
 }
